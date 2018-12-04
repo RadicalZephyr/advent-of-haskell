@@ -27,23 +27,30 @@ library:
 
 executables:
   day1:
-    main:                Day1.hs
-    source-dirs:         app
+    main:                Main.hs
+    source-dirs:         day/one
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - advent-of-haskell
-    - containers
+      - containers
+
+  day2:
+    main:                Main.hs
+    source-dirs:         day/two
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
 
 tests:
   advent-of-haskell-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - advent-of-haskell
+      - advent-of-haskell
