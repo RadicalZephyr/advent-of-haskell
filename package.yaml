@@ -35,6 +35,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - advent-of-haskell
+    - containers
 
 tests:
   advent-of-haskell-test:
